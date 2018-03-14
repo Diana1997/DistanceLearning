@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="747ed7e65a5f4e3bb197577244fd8e1a" Name="Diagram1">
+        <EntityTypeShape EntityType="DistanceLearningModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DistanceLearningModel.AspNetRole" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DistanceLearningModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="DistanceLearningModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DistanceLearningModel.AspNetUser" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DistanceLearningModel.Course" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DistanceLearningModel.Exam" Width="1.5" PointX="9.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DistanceLearningModel.Faculty" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DistanceLearningModel.Lecture" Width="1.5" PointX="9.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DistanceLearningModel.Lesson" Width="1.5" PointX="7.5" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DistanceLearningModel.Tribune" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <AssociationConnector Association="DistanceLearningModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="DistanceLearningModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="DistanceLearningModel.FK_Course_Tribune" ManuallyRouted="false" />
+        <AssociationConnector Association="DistanceLearningModel.FK_Exam_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="DistanceLearningModel.FK_Lesson_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="DistanceLearningModel.FK_Exam_Lesson" ManuallyRouted="false" />
+        <AssociationConnector Association="DistanceLearningModel.FK_Tribune_Faculty" ManuallyRouted="false" />
+        <AssociationConnector Association="DistanceLearningModel.FK_Lecture_Lesson" ManuallyRouted="false" />
+        <AssociationConnector Association="DistanceLearningModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
