@@ -1,0 +1,41 @@
+﻿@model DistanceLearning.Models.Course
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Ջնջել</h2>
+
+<h3>Դուք համոզված եք, որ ցանկանում եք ջնջել բաժինը???</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Բաժնի անվանումը
+            @*@Html.DisplayNameFor(model => model.Name)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.Tribune.Name)*@
+            Անբիոնի անվանումը
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tribune.Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Ջնջել" class="btn btn-default" /> |
+            @Html.ActionLink("Վերադառնալ ցուցակին", "Index")
+        </div>
+    }
+</div>
