@@ -26,5 +26,9 @@ namespace DistanceLearning.Controllers
 
             return View();
         }
+        public ActionResult LearnService()
+        {
+            return View();
+        }
     }
 }

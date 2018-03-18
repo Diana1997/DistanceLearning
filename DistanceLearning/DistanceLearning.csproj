@@ -361,9 +361,11 @@
     <Content Include="Views\Lessons\Details.cshtml" />
     <Content Include="Views\Lessons\Edit.cshtml" />
     <Content Include="Views\Lessons\Index.cshtml" />
+    <Content Include="Views\Home\LearnService.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\LearnService\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
