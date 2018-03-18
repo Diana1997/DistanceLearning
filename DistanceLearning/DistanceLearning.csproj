@@ -362,6 +362,7 @@
     <Content Include="Views\Lessons\Edit.cshtml" />
     <Content Include="Views\Lessons\Index.cshtml" />
     <Content Include="Views\Home\LearnService.cshtml" />
+    <Content Include="Views\Home\LearnStatement.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

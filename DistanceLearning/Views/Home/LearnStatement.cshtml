@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "LearnStatement";
+}
+
+<h2>LearnStatement</h2>
+@using (Html.BeginForm())
+{
+    <label>Անուն</label><br />
+    <input type="text" name="firstname" /><br />
+    <label>Ազգանուն</label><br />
+    <input type="text" name="secondname" /><br />
+    <label>Հայրանուն</label><br />
+    <input type="text" name="lastname" /><br />
+    <label>Ծննդյան օր</label><br />
+    <input type="date" /><br />
+    <label>Հասցե</label><br />
+    <input type="text" name="address" /><br />
+    <label>Հեռախոսահամար</label><br />
+    <input type="tel" name="phone" /><br />
+
+    <label>   Էլեկտրոնային փոստ</label> <br />
+    <input type="email" name="email" /><br />
+    <label>Ֆակուլտետ</label><br />
+    @Html.DropDownList("FacultyID", null, htmlAttributes: new { @class = "form-control" }) <br />
+    <label>Ամբիոն</label><br />
+    @Html.DropDownList("TribuneID", null, htmlAttributes: new { @class = "form-control" }) <br />
+    <label>Մասնագիտություն</label><br />
+    @Html.DropDownList("CourseID", null, htmlAttributes: new { @class = "form-control" }) <br />
+    <input type="button" value="Ուղարկել" />
+}
+

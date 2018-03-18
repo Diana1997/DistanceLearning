@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DistanceLearning.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,8 @@ namespace DistanceLearning.Controllers
 {
     public class HomeController : Controller
     {
+        private DistanceLearningEntities db = new DistanceLearningEntities();
+
         public ActionResult Index()
         {
             return View();
@@ -28,6 +31,13 @@ namespace DistanceLearning.Controllers
         }
         public ActionResult LearnService()
         {
+            return View();
+        }
+        public ActionResult LearnStatement()
+        {
+            ViewBag.FacultyID = new SelectList(db.Faculties, "FacultyID", "Name");
+            ViewBag.TribuneID = new SelectList(db.Tribunes, "TribuneID", "Name");
+            ViewBag.CourseID = new SelectList(db.Courses, "CourseID", "Name");
             return View();
         }
     }
