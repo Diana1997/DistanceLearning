@@ -19,7 +19,7 @@ namespace DistanceLearning.Models
         public string Path { get; set; }
         public int LessonID { get; set; }
         public string Links { get; set; }
-    
+        
         public virtual Lesson Lesson { get; set; }
     }
 }

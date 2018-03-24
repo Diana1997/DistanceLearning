@@ -1,0 +1,31 @@
+﻿@model IEnumerable<DistanceLearning.Models.Faculty>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<ul>
+    @foreach (var item in Model)
+    {
+
+    <li>
+        @Html.ActionLink(Html.DisplayFor(faculty => item.Name).ToString(), "", new { id = item.FacultyID })
+        <ul>
+            @foreach (var tribune in item.Tribunes)
+            {
+                 <li>
+                    @Html.ActionLink(@Html.DisplayFor(m => tribune.Name).ToString(), "")
+                     <ul>
+                         @foreach(var course in tribune.Courses)
+                         {
+                             @Html.DisplayFor(c => course.Name)
+                         }
+                     </ul>
+                 </li>
+            }
+        </ul>
+    </li>
+    }
+</ul>
+
+

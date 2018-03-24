@@ -196,6 +196,7 @@
     <Compile Include="Controllers\ExamsController.cs" />
     <Compile Include="Controllers\FacultiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LearnController.cs" />
     <Compile Include="Controllers\LecturesController.cs" />
     <Compile Include="Controllers\LessonsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -363,10 +364,10 @@
     <Content Include="Views\Lessons\Index.cshtml" />
     <Content Include="Views\Home\LearnService.cshtml" />
     <Content Include="Views\Home\LearnStatement.cshtml" />
+    <Content Include="Views\Learn\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\LearnService\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
